@@ -1,1 +1,1 @@
-# Mode-12
+ MoodPlant takes user-selected emotions—happy, neutral, sad, or angry—and brings them to life through dynamic plant imagery and heartfelt responses that evolve with mood. With a clean and vibrant UI built using HTML, CSS, and JavaScript, each interaction delivers an engaging visual and emotional cue, from blooming joy to drooping sorrow. The plant image updates seamlessly, while thoughtful messages like “Your plant is thriving!” or “Let’s breathe and cool down” create a cozy, empathetic space for reflection.
