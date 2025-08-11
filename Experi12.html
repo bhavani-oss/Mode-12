@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DevOps Lifecycle – Styled Boxes</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      padding: 40px;
+      color: #333;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+      color: #2c3e50;
+    }
+    .lifecycle {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .stage {
+      position: relative;
+      width: 200px;
+      height: 120px;
+      background-color: #3498db;
+      border-radius: 10px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+    .stage:hover {
+      transform: translateY(-5px);
+      background-color: #2980b9;
+    }
+    .stage .desc {
+      position: absolute;
+      bottom: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(44, 62, 80, 0.9);
+      padding: 8px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s;
+      width: 240px;
+      text-align: center;
+    }
+    .stage:hover .desc {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>DevOps Lifecycle</h1>
+  <div class="lifecycle">
+    <div class="stage">
+      Plan
+      <div class="desc">Define project goals, align Dev & Ops teams for smooth collaboration. :contentReference[oaicite:1]{index=1}</div>
+    </div>
+    <div class="stage">
+      Code
+      <div class="desc">Write code with version control (Git, GitHub, GitLab) for collaborative development. :contentReference[oaicite:2]{index=2}</div>
+    </div>
+    <div class="stage">
+      Build
+      <div class="desc">Compile, package artifacts using build tools, CI pipelines (e.g., Maven/Jenkins). :contentReference[oaicite:3]{index=3}</div>
+    </div>
+    <div class="stage">
+      Test
+      <div class="desc">Run automated unit, integration, and end-to-end tests for early bug detection. :contentReference[oaicite:4]{index=4}</div>
+    </div>
+    <div class="stage">
+      Deploy
+      <div class="desc">Deliver builds to staging or production via automated CD pipelines. :contentReference[oaicite:5]{index=5}</div>
+    </div>
+    <div class="stage">
+      Monitor
+      <div class="desc">Continuously observe system performance and health using Prometheus, Grafana. :contentReference[oaicite:6]{index=6}</div>
+    </div>
+    <div class="stage">
+      Feedback
+      <div class="desc">Collect user and system feedback to inform and improve future iterations. :contentReference[oaicite:7]{index=7}</div>
+    </div>
+  </div>
+</body>
+</html>
